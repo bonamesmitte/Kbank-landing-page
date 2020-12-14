@@ -1,1 +1,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* <home> */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.home{
+    background: url(../asset/img/family.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 90%;
+}
+
+.home .content{
+    max-width: 100%;
+    text-align: center;
+}
+
+.home .content h2{
+    font-size: 5em;
+    color: whitesmoke;
+}
+
+.home .content p{
+    font-size: 1.5em;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    background-color: red;
+    margin-bottom: 55px;
+    border-radius: 2%;
+}
+
+.home-btn{
+    padding: 10px 30px;
+    background-color: #30B700;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 5%;
+}
+
+.home-btn:hover{
+    letter-spacing: 6px;
+    font-size: 1.5em;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: w
+}
+
+header .nav{
+    position: relative;
+    display: flex;
+}
+
+header .nav li{
+    list-style: none;
+    margin-left: 50px;
+}
+
+header .nav li a{
+    text-decoration: none;
+    color: rgb(50,50,40);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+header .nav li a:hover{
+    color: red;
+    font-weight: 500;
+}
+
+/* <banking> */
+section{
+    padding:100px;
+}
+
+.row{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.row col{
+    position: relative;
+    width: 50%;
+}
+
+.titleText{
+    font-size: 2em;
+    margin-bottom: 20px;;
+}
+
+.titleText span{
+    color: red;
+}
+
+.row .col .imgBx{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.row .col .imgBx img{
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+
+
+
