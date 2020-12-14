@@ -85,7 +85,7 @@ header .nav li{
 header .nav li a{
     text-decoration: none;
     color: rgb(50,50,40);
-    font-weight: 300;
+    font-weight: 500;
     font-size: 20px;
 }
 
@@ -97,6 +97,10 @@ header .nav li a:hover{
 /* <banking> */
 section{
     padding:100px;
+}
+
+.banking{
+    background-color: whitesmoke;
 }
 
 .row{
@@ -134,6 +138,98 @@ section{
     object-fit: cover;
     height: 100%;
 }
+
+/* <card> */
+.card{
+    background: url(../asset/img/bg-card2.jpg);
+    background-size: cover;
+    opacity: 90%;
+    /* position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 90%; */
+}
+
+.card .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card .content .box{
+    background: bisque;
+    opacity: 80%;
+    width: 400px;
+    height: 530px;
+    padding: 30px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+    border-radius: 15px;
+}
+
+.card .content .box .imgBx{
+    position: relative;
+    width: 100px;
+    height: 80px;
+}
+
+.card .content .box .imgBx img{
+    margin-left: 15px;
+}
+
+.card .content .box .imgBx img{
+    margin-left: 15px;
+}
+
+.white .titleText,
+.white p{
+    color: white;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+#titleCard{
+    font-size: 2.5em;
+}
+
+.card .content .box .text{
+    text-align: center;
+    margin-top: 140px;
+}
+
+.card .content .box p{
+    color: black;
+    font-weight: 700;
+    line-height: 30px;
+    /* color: rgb(50,50,40); */
+    margin-bottom: 30px;
+}
+
+.card-btn{
+    padding: 5px 12px;
+    background-color: #30B700;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: 1.3px;
+    border-radius: 5%;
+}
+
+
+
+
+
+
 
 
 
