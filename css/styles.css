@@ -329,6 +329,23 @@ select{
     margin-bottom: 20px;
 }
 
+.CDresult p{
+    color: black;
+    font-weight: 600;
+}
+
+.buttons .CDbutton{
+    margin-top: 0px;
+    font-size: 1em;
+    background-color: olivedrab;
+    border: 0.5px solid grey;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 5%;
+    font-weight: 600;
+}
+
+
 /* <contact> */
 .contact{
     background: url(../asset/img/contact1.jpg);
@@ -400,6 +417,7 @@ button{
     position: relative;
     
 }
+
 
 /* <footer> */
 

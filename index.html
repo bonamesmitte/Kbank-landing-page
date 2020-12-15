@@ -111,49 +111,57 @@
     <div class="CDform">
       <h2 class="titleText">CD <span>C</span>alculator</h2>
 
+      <form id="CDform">
       <div class="input">
-        <label>OPENING DEPOSIT </label><input type="text" placeholder="Number Only">
+        <label>OPENING DEPOSIT </label><input type="text" placeholder="Number Only" id="amount">
       </div>
       <br/>
       <br/>
 
       <div class="input">
-        <label>NUMBER OF YEARS </label> <br/><select id ="years" input="text/number">
+        <label>NUMBER OF YEARS </label> <br/>
+      <span class="select" id="term">
+      <select id ="years" input="text/number">
           <option>&nbsp &nbsp &nbsp &nbsp &nbsp Select Terms &nbsp &nbsp &nbsp &nbsp</option>
           <option>1</option>
           <option>3</option>
           <option>5</option>
       </select>
+     </span>  
       </div>
 
       <div class="input">
-        <button type="submit" class="CDbutton"><b>&nbsp &nbsp Calculate &nbsp &nbsp</b></button>
+        <button type="submit" class="CDbutton" onclick="computeResults()"><b>&nbsp &nbsp Calculate &nbsp &nbsp</b></button>
       </div>
+      </br>
+
+      <div class="buttons">
+      <button type="reset" class="CDbutton" onclick="refresh().computeResults">RESET</button>
+      </div>
+    </form>
     </div>
 
     <div class="CDresult">
       <h2>ESTIMATED EARNINGS</h2>
 
       <div class="input">
-        <label>OPENING DEPOSIT </label><input type="text">
+        <label>OPENING DEPOSIT </label><p type="text" id="open"></p>
       </div>
 
       <div class="input">
-        <label>OFFERED INTEREST</label><input type="text">
+        <label>OFFERED INTEREST</label><p type="text" id="openInterest"></p>
       </div>
 
       <div class="input">
-        <label>TOTAL EARNINGS</label><input type="text">
+        <label>TOTAL EARNINGS</label><p type="text" id="earnings"></p>
       </div>
 
       <div class="input">
-        <label>ENDING BALANCE</label><input type="text">
+        <label>ENDING BALANCE</label><p type="text" id="totalAmount"></p>
       </div>
-
     </div>
   </div>
   </div>
-
 </div>
 
 
