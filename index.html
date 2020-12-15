@@ -18,7 +18,7 @@
       <li><a href="#banking" onclick="navToggle();">Banking</a></li>
       <li><a href="#card" onclick="navToggle();">Cards</a></li>
       <li><a href="#lending" onclick="navToggle();">Lending</a></li>
-      <!-- <li><a href="#cd">CD Calculator</a></li> -->
+      <li><a href="#cd">CD Calculator</a></li>
       <li><a href="#contact" onclick="navToggle();">Contact</a></li>
     </ul>
   </header>
@@ -104,6 +104,59 @@
       </div>
     </div>
   </section>
+
+  <div class="cd" id="cd">
+    <div class="CDcontainer">
+    <div class="CDflex">
+    <div class="CDform">
+      <h2 class="titleText">CD <span>C</span>alculator</h2>
+
+      <div class="input">
+        <label>OPENING DEPOSIT </label><input type="text" placeholder="Number Only">
+      </div>
+      <br/>
+      <br/>
+
+      <div class="input">
+        <label>NUMBER OF YEARS </label> <br/><select id ="years" input="text/number">
+          <option>&nbsp &nbsp &nbsp &nbsp &nbsp Select Terms &nbsp &nbsp &nbsp &nbsp</option>
+          <option>1</option>
+          <option>3</option>
+          <option>5</option>
+      </select>
+      </div>
+
+      <div class="input">
+        <button type="submit" class="CDbutton"><b>&nbsp &nbsp Calculate &nbsp &nbsp</b></button>
+      </div>
+    </div>
+
+    <div class="CDresult">
+      <h2>ESTIMATED EARNINGS</h2>
+
+      <div class="input">
+        <label>OPENING DEPOSIT </label><input type="text">
+      </div>
+
+      <div class="input">
+        <label>OFFERED INTEREST</label><input type="text">
+      </div>
+
+      <div class="input">
+        <label>TOTAL EARNINGS</label><input type="text">
+      </div>
+
+      <div class="input">
+        <label>ENDING BALANCE</label><input type="text">
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+</div>
+
+
 
   <section class="contact" id="contact">
     <div class="container">

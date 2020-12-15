@@ -242,6 +242,93 @@ section{
     color: rgb(50,50,40);
 }
 
+/*<cd calculator>*/
+.CDcontainer{
+    background: url(../asset/img/cd.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    opacity: 90%;
+}
+
+.CDform .titleText{
+    font-size: 2em;
+}
+
+.cd label{
+    font-size: 1.2em;
+}
+
+.CDform{
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.CDform .titleText{
+    margin-bottom: 40px;
+}
+
+.CDform input{
+    width: 70%;
+    border: 1px solid grey;
+    padding: 3px 0px;
+    color: grey;
+    font-size:18px;
+    text-align: center;
+}
+
+.CDbutton{
+    margin-top: 25px;
+    font-size: 1.2em;
+    background-color:palevioletred;
+    opacity: 90%;
+    border: 0.5px solid grey;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5%;
+    font-weight: 700;
+    
+}
+
+select{
+    font-size: 19px;
+    color: grey;
+    width: 70%;
+}
+
+.CDresult input{
+    width: 70%;
+    font-size:15px;
+}
+
+.CDresult{
+    background: url(../asset/img/post.png);
+    background-repeat: no-repeat;
+    padding: 60px 40px;
+    margin-top: 40px;
+    width: 400px;
+    height: 600px;
+    margin-left: 30px;
+}
+
+.CDresult .input{
+    width: 80%;
+    color: rgb(50,50,40);
+    font-size:15px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
+
+.CDresult h2{
+    margin-bottom: 20px;
+}
+
 /* <contact> */
 .contact{
     background: url(../asset/img/contact1.jpg);
