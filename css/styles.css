@@ -134,7 +134,7 @@ section{
     width: 100%;
     position: relative;
     height: 100%;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 .row .col .imgBx img{
@@ -453,7 +453,7 @@ button{
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 320px){
     .home .content h2 {
     font-size: 2.7em;
     color: #fff;
@@ -476,7 +476,16 @@ button{
     }
 
     .row .col .imgBx {
-    margin-left: 0;
+    margin-left: 0px;
+    }
+
+    .row .col .imgBx img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
     }
 
     .lending .row .col .lendingP{
@@ -489,6 +498,23 @@ button{
 
     .navToggle.active{
         padding-right: 50px;
+    }
+
+    .row .col .titleText {
+        margin-top: 70px;
+    }
+
+    .card .title{
+        margin-top: 70px;
+    }
+
+    .lending .titleText {
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    .contact .titleText{
+        margin-top: 100px;
     }
 
 }

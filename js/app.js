@@ -4,5 +4,3 @@ function navToggle(){
     navToggle.classList.toggle('active');
     nav.classList.toggle('active');
 }
-
-
