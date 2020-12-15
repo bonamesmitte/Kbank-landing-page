@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 90%;
+    opacity: 95%;
 }
 
 .home .content{
@@ -66,11 +66,11 @@ header{
     right: 0;
     z-index: 100;
     width: 100%;
-    padding: 10px 70px;
+    padding: 11px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 header .nav{
@@ -91,7 +91,7 @@ header .nav li a{
 }
 
 header .nav li a:hover{
-    color: red;
+    color: #ff0157;
     font-weight: 500;
 }
 
@@ -109,6 +109,7 @@ section{
     display: flex;
     justify-content:space-between;
     width: 100%;
+    margin-bottom: 70px;;
 }
 
 .row .col{
@@ -116,13 +117,17 @@ section{
     width: 50%;
 }
 
-.titleText{
+.row .col .titleText{
     font-size: 2em;
     margin-bottom: 20px;;
 }
 
 .titleText span{
     color: red;
+}
+
+.bankingP{
+    margin-top: 40px;
 }
 
 .row .col .imgBx{
@@ -148,8 +153,10 @@ section{
 }
 
 .card .title{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    margin-top: 0px;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .card .content{
@@ -213,10 +220,15 @@ section{
     background-color: whitesmoke;
 }
 
+.lending .titleText{
+    font-size: 2em;
+}
+
 .titleText1{
     font-size: 1.7em;
     margin-bottom: 20px;;
     margin-top: 40px;
+    color: rgb(50,50,40);
 }
 
 .row .col{
@@ -225,8 +237,9 @@ section{
 }
 
 .row .col .lendingP{
-    font-size: 1.2em;;
-    line-height: 22px;
+    font-size: 1.4em;;
+    line-height: 30px;
+    color: rgb(50,50,40);
 }
 
 /* <contact> */
@@ -239,8 +252,14 @@ section{
     display: flex;
 }
 
+.contact .contactTitle{
+    font-size: 1.5em;
+}
+
 .contact .contactTitle p{
-    font-size: 1.3em;
+    font-size: 0.8em;
+    margin-top: 10px;
+    font-weight: 200;
 }
 
 .contact .form h3{
@@ -308,9 +327,158 @@ button{
 }
 
 .footer a{
-    color:rgb(38, 196, 38);
+    color: rgb(38, 196, 38);
     font-weight: 500;
     text-decoration: none;
+}
+
+@media (max-width: 991px){
+    header{
+        padding: 8px 10px;
+    }
+    
+    header .nav{
+        display: none;
+    }
+
+    header .nav.active{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+    }
+
+    header .nav li {
+        margin-left: 0px;
+    }
+
+    header .nav li a{
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    header .nav.active {
+        width: 100%;
+        height: 100%;
+        height: calc(100%-68px);
+        position: fixed;
+        left: 0;
+        top: 66px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+    }
+    
+    .navToggle{
+        background: url(../asset/img/nav.png);
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+    }
+
+    .navToggle.active{
+        background: url(../asset/img/clo.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: invert(1);
+    }
+
+    section {
+        padding: 20px;
+    }
+    
+    .home .content h2 {
+        font-size: 3.1em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col .imgBx-lending {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .row .col .imgBx-lending img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card .title{
+        margin-bottom: 40px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .lending .row .col .lendingP{
+        margin-top: 20px;
+        font-size: 1em;
+    }
+
+    .lending .titleText{
+        margin-top:30px;
+        text-align: center;
+    }
+
+    .lending .titleText1{
+        margin-bottom: 25px;
+        margin-top: 0px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .row .col {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .home .content h2 {
+    font-size: 2.7em;
+    color: #fff;
+    }
+    .home .content p{
+    font-size: 1.2em;
+    color: white;
+    margin-top: 15px;
+    }
+
+    .home-btn{
+    padding: 8px 20px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    }
+
+    .home-btn:hover{
+    letter-spacing: 2.8px;
+    font-size: 1.4em;
+    }
+
+    .row .col .imgBx {
+    margin-left: 0;
+    }
 }
 
 
